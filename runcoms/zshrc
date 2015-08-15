@@ -11,3 +11,29 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+alias ppa-add='echo "sudo add-apt-repository";sudo add-apt-repository '
+alias ppa-remove='sudo add-apt-repository --remove"; sudo add-apt-repository --remove '
+
+alias reboot='echo "sudo reboot"; sudo reboot'
+alias update='echo "sudo apt-get update"; sudo apt-get update'
+alias install='echo "sudo apt-get install"; sudo apt-get install'
+alias upgrade='echo "*** sudo apt-get; sudo apt-get dist-upgrade"; sudo apt-get update; sudo apt-get dist-upgrade; echo "Terminée"'
+alias dist-upgrade='echo "*** sudo apt-get; sudo apt-get dist-upgrade"; sudo apt-get update; sudo apt-get dist-upgrade; echo "Terminée"'
+
+alias autoremove='echo "sudo apt-get autoremove --purge"; sudo apt-get autoremove --purge'
+
+alias remove='echo "sudo apt-get autoremove --purge"; sudo apt-get autoremove --purge'
+
+# Git aliases
+alias g='git'
+alias gst='git status'
+alias gp='git pull'
+alias gap='git add -p'
+alias gsth='git stash'
+alias gsthp='git stash pop'
+alias gph='git push'
+alias gbra='git branch -a'
+alias gbrd='git branch -d'
+alias gcm='git commit -m'
+alias gco='git checkout'
+alias gcob='git checkout -b'
