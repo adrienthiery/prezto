@@ -37,7 +37,6 @@ alias gbrd='git branch -d'
 alias gcm='git commit -m'
 alias gco='git checkout'
 alias gcob='git checkout -b'
-alias gclear='git clear && git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
-
+alias gclear='echo "Clearing remote branches refs"; git clear; echo "Clearing local branches"; git branch --merged | grep -v "\*" | grep -v master | grep -v dev | xargs -n 1 git branch -d'
 
 source ~/.bashrc
